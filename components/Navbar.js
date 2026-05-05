@@ -31,10 +31,7 @@ export default function Navbar() {
     const element = document.querySelector(href)
     if (element) {
       const offsetTop = element.offsetTop - 80
-      window.scrollTo({
-        top: offsetTop,
-        behavior: 'smooth',
-      })
+      href="#about"
     }
   }
 

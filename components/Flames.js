@@ -16,6 +16,10 @@ export default function Embers() {
     resize()
     window.addEventListener('resize', resize)
 
+    // 🔥 Detect device
+    const isMobile = window.innerWidth < 768
+    const particleCount = isMobile ? 40 : 120   // 👈 reduce for mobile
+
     const particles = []
 
     function createParticle() {
@@ -30,7 +34,8 @@ export default function Embers() {
       }
     }
 
-    for (let i = 0; i < 120; i++) {
+    // 🔥 Use dynamic particle count
+    for (let i = 0; i < particleCount; i++) {
       particles.push(createParticle())
     }
 
@@ -61,7 +66,7 @@ export default function Embers() {
         ctx.arc(p.x, p.y, p.size * 4, 0, Math.PI * 2)
         ctx.fill()
 
-        if (p.life > p.maxLife || p.y < -50) {
+        if (p.life > p.maxLife || p.y < -30) {
           particles[i] = createParticle()
         }
       })

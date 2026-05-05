@@ -10,6 +10,8 @@
   body {
     @apply bg-black text-gray-900 antialiased;
     font-family: "Times New Roman", Times, serif;
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
   }
 }
 
@@ -52,9 +54,11 @@
     transparent
   );
   border-radius: 50% 50% 50% 50%;
-  animation: rise 5s linear infinite,
+  animation: rise 7s linear infinite,
              flicker 0.5s ease-in-out infinite alternate;
   opacity: 0.8;
+  will-change: transform, opacity;
+  transform: translateZ(0);
 }
 
 /* float upward */
