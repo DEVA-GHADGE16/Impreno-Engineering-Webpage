@@ -74,6 +74,13 @@ export default function Footer() {
                 >
                   +91 90286 16566
                 </a>
+                <br></br>
+                <a
+                  href="tel:+91 9158246197"
+                  className="hover:text-orange-400 transition-colors"
+                >
+                  +91 91582 46197
+                </a>
               </li>
             </ul>
           </div>

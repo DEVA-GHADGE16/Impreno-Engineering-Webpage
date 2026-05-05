@@ -73,6 +73,10 @@ export default function Contact() {
               <a href="tel:+919028616566" className="text-primary-600 font-medium">
                 +91 90286 16566
               </a>
+              <br></br>
+              <a href="tel:+919158246197" className="text-primary-600 font-medium">
+                +91 91582 46197
+              </a>
             </div>
 
             <div className="bg-black rounded-xl shadow-lg p-8 text-center">
