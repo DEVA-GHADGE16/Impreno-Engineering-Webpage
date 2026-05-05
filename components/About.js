@@ -41,7 +41,7 @@ export default function About() {
             <div className="relative">
               <div className="rounded-2xl overflow-hidden shadow-xl border border-gray-200">
                 <Image
-                  src="/Engineering.png"
+                  src="/engineering.png"
                   alt="Impreno Engineering CNC Machining"
                   width={600}
                   height={450}
