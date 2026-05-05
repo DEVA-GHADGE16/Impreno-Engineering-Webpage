@@ -24,3 +24,10 @@ app/
 components/
 public/
 styles/
+---
+👨‍💻 Author
+
+Devendra Ghadge
+📧 devaghadge16@gmail.com
+
+🔗 [https://www.linkedin.com/in/devendra-ghadge-338194283](https://www.linkedin.com/in/devendra-g16/)
