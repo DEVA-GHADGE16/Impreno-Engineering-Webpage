@@ -20,10 +20,10 @@ export default function Footer() {
       <div className="container-custom py-12 md:py-16">
 
         {/* Top Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-10">
 
           {/* Company Info */}
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-2 sm:col-span-2">
             <h3 className="text-4xl md:text-5xl lg:text-6xl font-serif
               bg-gradient-to-r from-yellow-700 via-orange-500 to-orange-600
               bg-clip-text text-transparent mb-6 leading-tight">
@@ -37,9 +37,9 @@ export default function Footer() {
           </div>
 
           {/* Company Links */}
-          <div>
+          <div className="text-left">
             <h4 className="text-white font-extrabold mb-4">Company</h4>
-            <ul className="space-y-2">
+            <ul className="space-y-2 text-sm">
               {footerLinks.company.map((link, index) => (
                 <li key={index}>
                   <a
@@ -54,9 +54,9 @@ export default function Footer() {
           </div>
 
           {/* Contact Info */}
-          <div>
+          <div className="text-left">
             <h4 className="text-white font-extrabold mb-4">Contact</h4>
-            <ul className="space-y-3 text-gray-400">
+            <ul className="space-y-2 text-sm text-gray-400">
               <li>Email:</li>
               <li>
                 <a
@@ -74,9 +74,10 @@ export default function Footer() {
                 >
                   +91 90286 16566
                 </a>
-                <br></br>
+              </li>
+              <li>
                 <a
-                  href="tel:+91 9158246197"
+                  href="tel:+919158246197"
                   className="hover:text-orange-400 transition-colors"
                 >
                   +91 91582 46197
@@ -100,11 +101,11 @@ export default function Footer() {
                        hover:shadow-orange-500/30 transition"
           >
             <Image
-              src="/map.png"   // 👈 place map image in /public
+              src="/map.png"
               alt="Impreno Engineering Location"
               width={1200}
               height={300}
-              className="w-full h-64 object-cover"
+              className="w-full h-56 sm:h-64 object-cover"
             />
           </a>
         </div>
@@ -117,10 +118,12 @@ export default function Footer() {
               © {currentYear} IMPRENO ENGINEERING. All rights reserved.
             </p>
 
-            <a href="https://www.linkedin.com/in/devendra-ghadge-338194283"
+            <a
+              href="https://www.linkedin.com/in/devendra-ghadge-338194283"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm font-serif hover:text-orange-400 transition">
+              className="text-sm font-serif hover:text-orange-400 transition text-center"
+            >
               Designed & Developed by : DEVENDRA GHADGE
             </a>
 
